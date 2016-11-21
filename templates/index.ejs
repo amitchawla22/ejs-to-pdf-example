@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>EJS to PDF Example</title>
+    <style>
+        .table {
+            width: 100%;
+        }
+
+        .header {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .row {
+            width: 100%;
+            font-size: 16px;
+            font-weight: 200;
+        }
+
+        .row > td, .header > th {
+            width: 33%;
+        }
+    </style>
+</head>
+<body>
+    <table class="table">
+        <thead class="header">
+            <th>
+                Name
+            </th>
+            <th>
+                Age
+            </th>
+            <th>
+                Salary
+            </th>
+        </thead>
+        <tbody>
+            <% employees.forEach(function (employee) { %>
+                <tr class="row">
+                    <td>
+                        <%= employee.name %>
+                    </td>
+                    <td>
+                        <%= employee.age %>
+                    </td>
+                    <td>
+                        <%= employee.salary %>
+                    </td>
+                </tr>
+            <% })%>
+        </tbody>
+    </table>
+</body>
+</html>

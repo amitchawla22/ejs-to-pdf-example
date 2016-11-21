@@ -1,0 +1,30 @@
+{
+  "name": "html-to-pdf-example",
+  "version": "1.0.0",
+  "description": "Server side code to convert your data into a pdf file using a html to pdf convertor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amitchawla22/html-to-pdf-example.git"
+  },
+  "keywords": [
+    "html",
+    "to",
+    "pdf"
+  ],
+  "author": "amitchawla22@yahoo.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amitchawla22/html-to-pdf-example/issues"
+  },
+  "homepage": "https://github.com/amitchawla22/html-to-pdf-example#readme",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "ejs": "^2.5.2",
+    "html-pdf": "^2.1.0",
+    "moment": "^2.16.0"
+  }
+}
